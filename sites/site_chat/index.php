@@ -10,9 +10,9 @@
 	<form action="server/co.php" method="POST">
 		<legend>Connecte-toi</legend>
 		<label for="login">Nom de compte:</label><br>
-		<input type="text" name="login" id="login" placeholder="Login"><br>
+		<input type="text" name="log" id="log" placeholder="Login"><br>
 		<label for="password">Mot de passe:</label><br>
-		<input type="password" name="password" id="password" placeholder="Password"><br>
+		<input type="password" name="pass" id="pass" placeholder="Password"><br>
 		<button>Se connecter</button> <br>
 		<a href="client/subscribe.php">S'inscrire</a>
 	</form>
