@@ -25,7 +25,7 @@ include('../SQL/sql.php');
         $resultat=$req->fetch();
         if($sucess === true){
             session_start();
-            $_SESSION['login'] = $resultat['log'];
+            $_SESSION['log'] = $resultat['log'];
             $_SESSION['id'] = $resultat['id'];            
 ?>
         <script>alert("Vous êtes bien inscrit !") </script>

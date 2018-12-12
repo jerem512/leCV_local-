@@ -14,10 +14,10 @@ if(isset($_POST['log'], $_POST['pass'])){
     else{
         $isPasswordCorrect = password_verify($_POST['pass'], $resultat['pass']);
             if($isPasswordCorrect){
-                    session_start();
                     ?>
                     <script>alert("Vous êtes connectés !")</script>
                     <?php
+                    session_start();
                     $_SESSION['log'] = $resultat['log'];
                     $_SESSION['id'] = $resultat['id'];
                     header("Refresh: 1; URL=../client/app.php");
