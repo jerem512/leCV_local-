@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-	<h1>BIENVENU DANS LA CHATROOM !</h1>
+   <div class="body">
+	<h1>BIENVENUS DANS LA CHATROOM !</h1>
 	<form action="server/co.php" method="POST">
 		<legend>Connecte-toi</legend>
 		<label for="login">Nom de compte:</label><br>
@@ -16,5 +17,6 @@
 		<button>Se connecter</button> <br>
 		<a href="client/subscribe.php">S'inscrire</a>
 	</form>
+   </div>	
 </body>
 </html>

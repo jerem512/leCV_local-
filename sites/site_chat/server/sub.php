@@ -16,7 +16,9 @@ include('../SQL/sql.php');
             	echo implode(' ',$req->errorInfo());
             }
 	 }else{
-        echo 'non !';
+        ?>
+            <script>alert('Les champs ne sont pas conformes !')</script>
+        <?php
      }
 }
         $req = $bdd->prepare('SELECT id, log FROM user WHERE log = :log');
