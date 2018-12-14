@@ -1,6 +1,5 @@
 label{
 	text-align: left;
-
 }
 p{
 	border-bottom: 1px solid black;
@@ -8,4 +7,24 @@ p{
 }
 .body{
 	text-align: center;
+}
+h1{
+	text-align: center;
+	text-decoration: underline;
+	color: white;
+	font-size: 75px;
+}
+legend{
+	font-size: 50px;
+}
+.mid{
+	margin-top: 200px;
+}
+body{
+	background-image: url();
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+a{
+	color: white;
 }

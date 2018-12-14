@@ -4,6 +4,8 @@
         <meta charset="utf-8" />
         <title>Mini-chat</title>
         <link rel="stylesheet" href="../assets/css/main.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap.css">
+        <link rel="stylesheet" href="../assets/js/bootstrap.js">
     </head>
     <body>
     <h1>CHATROOM</h1>
@@ -13,7 +15,7 @@ session_start();
 // Connexion à la base de données
 include("../SQL/sql.php");
 // Récupération des 10 derniers messages
-$reponse = $bdd->query('SELECT pseudo, message FROM chat ORDER BY ID DESC LIMIT 0, 20');
+$reponse = $bdd->query('SELECT pseudo, message FROM chat ORDER BY ID DESC LIMIT 0, 150');
 // Affichage de chaque message
 while ($donnees = $reponse->fetch()){
     echo '<label><strong>' . htmlspecialchars($donnees['pseudo']) . '</label></strong> : ' . '<p>' . htmlspecialchars($donnees['message']) . '</p>';
